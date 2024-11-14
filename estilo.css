@@ -6,13 +6,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
   }
-  /* codigo nuevo */
-  body {
-    font-size: 1.2rem;
-    width: 80%;
-  }
+  
   
   header {
     background-color: #2E4053; /* Azul oscuro */
@@ -185,20 +180,7 @@ body {
     margin-bottom: 20px;
     color: #333;
   }
-  /* codigo nuevo */
-
-  .contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  /* codigo nuevo */
-  .contenedor {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-  }
+  
   .contenedor-compromiso {
     display: flex;
     flex-direction: column;
