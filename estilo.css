@@ -8,26 +8,89 @@ body {
     background-repeat: no-repeat;
   }
   
+  
   header {
     background-color: #2E4053; /* Azul oscuro */
     padding: 30px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
+  p { /* poner color gris al parrafo */
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  h1 {
+    font-size: 36px;
+    color: #2E4053;
+    margin-bottom: 20px;
+  }
   
+  h2 {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+  }
+  .tarjeta {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    width: 40%;
+  }
+  .tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .tarjeta {
+    margin: 20px;
+    width: calc(33.33% - 40px);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .tarjeta {
+      width: calc(50% - 40px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tarjeta {
+      width: 100%;
+    }
+  }
   .logo {
-    width: 250px; /* Aumenta el ancho del logo */
-    height: 200px; /* Aumenta el alto del logo */
-    margin: 40px auto; /* Aumenta el margen superior e inferior */
-    border-radius: 20px; /* Aumenta el radio de la esquina */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Aumenta la sombra */
+    width: 250px;
+    height: 200px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #f7f7f7;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
   }
   
   .logo img {
-    width: 100%; /* Asegura que la imagen del logo cubra todo el contenedor */
-    height: 100%; /* Asegura que la imagen del logo cubra todo el contenedor */
-    object-fit: contain; /* Asegura que la imagen del logo se ajuste al contenedor */
-    border-radius: 20px; /* Aumenta el radio de la esquina */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
   }
   
   nav ul {
@@ -62,7 +125,13 @@ body {
     align-items: center;
     padding: 40px;
   }
-  
+  section {
+    background-color: #f7f7f7;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
   section {
     background-color: #f7f7f7;
     padding: 20px;
@@ -84,3 +153,124 @@ body {
     clear: both;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  li b {
+    font-weight: bold;
+    color: #4CAF50;
+  }
+  
+  .nuestro-compromiso {
+    background-color: #f7f7f7;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .titulo-seccion {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .contenedor-compromiso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .parrafo-compromiso {
+    font-size: 18px;
+    font-weight: regular;
+    margin-bottom: 20px;
+    color: #666;
+    padding: 0 20px;
+  }
+  
+  .parrafo-compromiso b {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .servicios {
+    background-color: #f7f7f7;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .titulo-seccion {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .tarjeta {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icono-tarjeta {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .titulo-tarjeta {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .descripcion-tarjeta {
+    font-size: 16px;
+    color: #666;
+  }
+
+  /* Agrega este código en tu archivo CSS */
+
+.contenedor-boton-whatsapp {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.boton-whatsapp {
+  background-color: #25D366;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.boton-whatsapp:hover {
+  background-color: #2ecc71;
+}
+
+.boton-whatsapp i {
+  margin-right: 10px;
+}
